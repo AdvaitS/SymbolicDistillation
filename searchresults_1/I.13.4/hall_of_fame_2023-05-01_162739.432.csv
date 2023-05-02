@@ -1,0 +1,8 @@
+Complexity,Loss,Equation
+1,0.02202219067958991,"0.4857678944391962"
+6,0.021787832343028276,"(sqrt(x4 - 0.6611290510853949) / x4)"
+7,0.021655369598355685,"(sin(sqrt(x2 + -0.5695664091612762)) - 0.43480216722273163)"
+10,0.02144599160476225,"sqrt(sin(square(square(sqrt(exp(sqrt(x4) * -0.4501353461969179))))))"
+17,0.018554572266460366,"(exp(sin(sqrt(sqrt(x1) * 0.7118845058000676))) / square(sqrt(sqrt(sqrt(exp(sin(x2))))) / -0.4554759655135004))"
+18,0.017294504666704576,"square(cos(sqrt(cos(square(exp(exp(sin(exp(-0.7708940100354595 - cos(sqrt(cos(cos(sqrt(sqrt(x2)))))))))))))))"
+19,0.012566485195707425,"exp(cos(exp(sqrt(exp(sin(sin(sqrt(sqrt(sqrt(sqrt(x3))))))))) - sqrt(sqrt(square(x3 + 0.43480216722273163)))))"
