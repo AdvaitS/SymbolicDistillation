@@ -1,0 +1,4 @@
+Complexity,Loss,Equation
+1,0.9745574766730238,"2.094102502214441"
+6,0.9644066177949036,"exp(0.638390550101475 - (-0.2472756117735048 / x3))"
+17,0.9480179405101153,"exp(sin(cos(cos(exp(square(sqrt(cos(sin(sqrt(square(x3)))))) / sin(sqrt(sqrt(x2))))))))"
