@@ -20,7 +20,6 @@ function preprocess(data)
 end
 
 function backprops(trainData::Vector{Any}, testData::Vector{Any}, trainX::Matrix{Float32}, trainY::Any, testX::Matrix{Float32}, testY::Any)
-    #Getting a local optimum model from Backprop
     features = size(trainData[1][1], 1)
     num_hiddens = [1, 1, 2, 2, 3]
     fdict = Dict(1 => ([[4], [5], [6, 3], [8, 5], [6, 4, 2]]),
@@ -107,18 +106,14 @@ end
 function correlation(X::Vector{T}, Y::Vector{T}) where T<:Real
     n = size(X, 1)
 
-    # Calculate the mean of X and Y
     mean_X = mean(X)
     mean_Y = mean(Y)
 
-    # Calculate the standard deviation of X and Y
     std_X = std(X)
     std_Y = std(Y)
 
-    # Calculate the covariance between X and Y
     cov_XY = sum((X .- mean_X) .* (Y .- mean_Y)) / (n - 1)
 
-    # Calculate the Pearson correlation coefficient
     corr_XY = cov_XY / (std_X * std_Y)
     if corr_XY == NaN 
         return 0
